@@ -61,3 +61,7 @@ foreach (cible foret etape_1 etape_2 etape_4)
         target_link_libraries(${cible} PRIVATE m)
     endif ()
 endforeach ()
+
+# parties suivantes du projet : chaque fichier, fourni plus tard, déclare ses cibles et leurs réglages
+include(cmake/partie2.cmake OPTIONAL)
+include(cmake/partie3.cmake OPTIONAL)
